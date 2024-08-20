@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Trigger Python Functions</title>
+  </head>
+  <body>
+    <div>
+        <h3>Form 1: 用于实例化 ModelTrainerR1</h3>
+      <!-- Form 1: 用于实例化 ModelTrainerR1 -->
+      <form method="POST" action="/demo1/">
+        <h3>Instantiate ModelTrainerR1</h3>
+        <input
+          type="text"
+          name="config_path"
+          placeholder="Config Path (optional)"
+        />
+        <input
+          type="text"
+          name="total_round"
+          placeholder="Total Rounds (optional)"
+        />
+        <input
+          type="text"
+          name="start_round"
+          placeholder="Start Round (optional)"
+        />
+        <input
+          type="text"
+          name="data_size"
+          placeholder="Data Size (optional)"
+        />
+        <input type="text" name="mode" placeholder="Mode (optional)" />
+        <button type="submit">Instantiate Model</button>
+      </form>
+    </div>
+
+    <div>
+        <h3>Form 2: 用于执行 ModelTrainerR1</h3>
+      <!-- Form 2: 用于执行 ModelTrainerR1 -->
+      <form method="POST" action="/demo1/">
+        <h3>Execute ModelTrainerR1</h3>
+        <input type="hidden" name="execute_model" value="1" />
+        <button type="submit">Execute Model</button>
+      </form>
+    </div>
+  </body>
+</html>
